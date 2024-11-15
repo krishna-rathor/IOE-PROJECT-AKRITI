@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gov Schemes & Nearby Washrooms/Shelters</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Main header section with gradient background -->
+    <header>
+        <h1>Aakriti - Bridging Inequalities</h1>
+        <p>Your guide to government schemes and essential services nearby</p>
+        <button class="cta-button">Explore More</button>
+    </header>
+
+    <!-- Login Form Section -->
+    <section id="login-section">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="cta-button">Login</button>
+        </form>
+    </section>
+
+    <!-- Government Schemes section -->
+    <section id="schemes">
+        <h2>Important Government Schemes</h2>
+        <ul>
+            <li>
+                <strong><a href="https://pmaymis.gov.in/" target="_blank">Pradhan Mantri Awas Yojana</a>:</strong> Pradhan Mantri Awas Yojana (PMAY) is a government initiative aimed at providing affordable housing to urban and rural poor.
+            </li>
+            <li>
+                <strong><a href="https://pmuy.gov.in/" target="_blank">Pradhan Mantri Ujjwala Yojana 2.0</a>:</strong> PMUY 2.0 provides free LPG connections to low-income families, promoting safe cooking practices.
+            </li>
+            <li>
+                <strong><a href="https://pmkisan.gov.in/" target="_blank">PM Kisan Samman Nidhi</a>:</strong> PM-KISAN offers financial assistance to small farmers, with Rs. 6,000 per year transferred directly to their bank accounts.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Map Section for Nearby Services -->
+    <section id="map-section">
+        <h2>Find Nearby Washrooms and Shelters</h2>
+        <div id="map" style="height: 500px;"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Aakriti - Bridging Inequalities. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <!-- Map Script -->
+    <script>
+        // Initialize the map with center coordinates and zoom level
+        var map = L.map('map').setView([28.6139, 77.2090], 12); // Example: Delhi, India
+
+        // Add the OpenStreetMap tile layer (the map tiles)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add a marker to the map
+        L.marker([28.6139, 77.2090]).addTo(map)
+          .bindPopup('New Delhi<br> Find nearby services.')
+          .openPopup();
+    </script>
+</body>
+</html>

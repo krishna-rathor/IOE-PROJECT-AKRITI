@@ -1,0 +1,244 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and basic font settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    padding-bottom: 40px;
+    transition: background-color 0.3s ease;
+}
+
+/* Header with gradient background */
+header {
+    background: linear-gradient(135deg, #5b9bd5, #34495e);
+    color: white;
+    text-align: center;
+    padding: 2.5em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 80px 80px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #f0f8ff;
+    font-weight: 300;
+}
+
+/* Call-to-action button */
+.cta-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #1e8449;
+    transform: translateY(-3px);
+}
+
+/* Section styling */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Section hover effect */
+section:hover {
+    background-color: #f5f7fa;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Scheme list styling */
+#schemes h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #2980b9;
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+#schemes ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#schemes li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* List item hover effect */
+#schemes li:hover {
+    background-color: #e8f4fa;
+    padding-left: 10px;
+}
+
+/* Link styling */
+a {
+    color: #2980b9; /* Initial link color */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effect with color change and glow */
+a:hover {
+    color: #ff6347; /* Change to a bright color on hover */
+    text-shadow: 0 0 8px rgba(244, 68, 123, 0.7), 0 0 10px rgba(255, 99, 71, 0.5); /* Glowing effect */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+
+/* Map section styling */
+#map-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #27ae60;
+    border-bottom: 3px solid #27ae60;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Map styling */
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Social media icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a img:hover {
+    filter: brightness(1);
+    transform: translateY(-3px);
+}
+
+/* Footer hover effect */
+footer:hover {
+    background-color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+/* Login Section */
+#login-section {
+    background-color: #f4f7f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #34495e;
+}
+
+#login-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#login-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.cta-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cta-button:hover {
+    background-color: #219150;
+}
